@@ -3,27 +3,73 @@
 # contain the input for number of rounds to paly with
 import numpy as np
 import random
-class Stock(object):
-      # set the parameters as global variables
+class SizeError(Exception):
       def __init__(self):
-            size = int(input("How many round do you want to play with?"))
-            self.n = int(size)
-      
-            print("You are going to play {} round, get ready!!!!!!!!\n".format(self.n))
-            self.high_price_list = [random.randint(201, 500) for i in range(int(self.n))]
-            self.low_price_list = [random.randint(50, 200) for i in range(int(self.n))]
-            self.volume_list = [random.randint(1, 200) for i in range(int(self.n))]
+            self.message = "Error: size must be a positive integer"
 
-      # when we start the program, it will ask user to input the numbers of round user want to play with, use print
+class Stock(object):
+      def __init__(self):
+            try:
+                  size = int(input("How many round do you want to play with?"))
+                  if size <= 0:
+                        raise SizeError
+                  self.n = int(size)
+                  
+                  print("You are going to play {} round, get ready!!!!!!!!\n".format(self.n))
+                  self.high_price_list = [random.randint(201, 500) for i in range(int(self.n))]
+                  self.low_price_list = [random.randint(50, 200) for i in range(int(self.n))]
+                  self.volume_list = [random.randint(1, 200) for i in range(int(self.n))]
+            except TypeError:
+                  print("Error: size must be a numeric value")
+            except ValueError:
+                  print("Error: size must be a positive integer")
+            except ZeroDivisionError:
+                  print("Error: size cannot be zero")
+            except Exception:
+                  print("An unknown error occurred")
+                  
+      
       def get_high_price(self):
-            return self.high_price_list
+            try:
+                  return self.high_price_list
+            except AttributeError:
+                  print("Error: high_price_list is not initialized")
+            except Exception:
+                  print("An unknown error occurred")
+                  
       def get_low_price(self):
-            return self.low_price_list
+            try:
+                  return self.low_price_list
+            except AttributeError:
+                  print("Error: low_price_list is not initialized")
+            except Exception:
+                  print("An unknown error occurred")
+                  
       def get_volume(self):
-            return self.volume_list
+            try:
+                  return self.volume_list
+            except AttributeError:
+                  print("Error: volume_list is not initialized")
+            except Exception:
+                  print("An unknown error occurred")
+                  
       def get_size(self):
-            return int(self.n)
+            try:
+                  return int(self.n)
+            except AttributeError:
+                  print("Error: n is not initialized")
+            except Exception:
+                  print("An unknown error occurred")
       
       def __str__(self):
-            return f"high price list: {self.high_price_list}\nlow price list: {self.low_price_list}\nvolume list: {self.volume_list}"
+            try:
+                  return f"high price list: {self.high_price_list}\nlow price list: {self.low_price_list}\nvolume list: {self.volume_list}"
+            except AttributeError:
+                  print("Error: high_price_list, low_price_list, or volume_list is not initialized")
+            except TypeError:
+                  print("Error: high_price_list, low_price_list, and volume_list must be lists")
+            except ValueError:
+                  print("Error: high_price_list, low_price_list, and volume_list must contain only integers")
+            except Exception:
+                  print("An unknown error occurred")  
 
