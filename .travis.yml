@@ -2,7 +2,8 @@ language: python
 python:
   - "3.4"
   - "3.5"
-  - "3.10"
 # command to run tests
 script:
   - python TestModule1.py
+  - python Test_bot.py
+  - python Test_endgame.py
