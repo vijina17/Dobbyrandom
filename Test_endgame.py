@@ -82,6 +82,8 @@ class Testendgame(unittest.TestCase): # test class
     def tearDownClass(cls):
         print('teardownClass')
 
+        
+unittest.main()
 
 # In[ ]:
 

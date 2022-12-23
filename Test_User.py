@@ -49,3 +49,5 @@ class TestUser(unittest.TestCase): # test class
       @classmethod
       def tearDownClass(cls):
             print('teardownClass')
+            
+unittest.main()

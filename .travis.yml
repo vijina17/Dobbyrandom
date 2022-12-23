@@ -10,3 +10,5 @@ script:
   - python TestModule1.py
   - python Test_bot.py
   - python Test_endgame.py
+  - python Test_Stock_Main.py
+  - python Test_User.py
