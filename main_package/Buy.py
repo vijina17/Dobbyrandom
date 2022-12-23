@@ -10,16 +10,35 @@ class Buy():
             self.expense = 0
       
       def check_balance(balance, expense):
-                        if (balance - expense >= 0):
-                              return True
-                        else:
-                              return False
+            try:
+                  if (balance - expense >= 0):
+                        return True
+                  else:
+                        return False
+            except TypeError:
+                  print("Error: balance and expense must be numeric values")
+            except ValueError:
+                  print("Error: balance and expense must be positive numeric values")
+            except ZeroDivisionError:
+                  print("Error: balance and expense cannot be zero")
+            except Exception:
+                  print("An unknown error occurred")
+                        
                         
       def check_volume(curr_vol, input_vol):
-            if (curr_vol - input_vol >= 0):
-                  return True
-            else:
-                  return False
+            try:
+                  if (curr_vol - input_vol >= 0):
+                        return True
+                  else:
+                        return False
+            except TypeError:
+                  print("Error: curr_vol and input_vol must be numeric values")
+            except ValueError:
+                  print("Error: curr_vol and input_vol must be positive numeric values")
+            except ZeroDivisionError:
+                  print("Error: curr_vol and input_vol cannot be zero")
+            except Exception:
+                  print("An unknown error occurred")
 
       def execute(high_price, low_price, balance, input_volume, random_price):
             info = []
