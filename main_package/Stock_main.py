@@ -6,6 +6,9 @@ import random
 class SizeError(Exception):
       def __init__(self):
             self.message = "Error: size must be a positive integer"
+      def __str__(self):
+            return(repr(self.message))
+            
 
 class Stock(object):
       def __init__(self):
@@ -63,7 +66,8 @@ class Stock(object):
       
       def __str__(self):
             try:
-                  return f"high price list: {self.high_price_list}\nlow price list: {self.low_price_list}\nvolume list: {self.volume_list}"
+                  print('high price list: {}','\nlow price list: {}','\nvolume list:{}'.format(self.high_price_list, self.low_price_list, self.volume_list))
+                  # return f'high price list: {self.high_price_list}\nlow price list: {self.low_price_list}\nvolume list: {self.volume_list}'
             except AttributeError:
                   print("Error: high_price_list, low_price_list, or volume_list is not initialized")
             except TypeError:
