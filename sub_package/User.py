@@ -1,9 +1,7 @@
 # from Stock_main import *
 # from Buy import *
 from main_package.Stock_main import *
-# from main_package.Buy_old import *
 from main_package.Buy import *
-
 
 
 
