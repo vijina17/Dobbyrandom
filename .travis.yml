@@ -2,11 +2,11 @@ language: python
 python:
   - "3.4"
   - "3.5"
-# jobs:
-#  include:
-#    before_install: cd "step2- test files"
+# command to install dependencies
+install:
+  - pip install -r requirements.txt
 # command to run tests
 script:
   - python TestModule1.py
-  - python \Test_bot.py
+  - python Test_bot.py
   - python Test_endgame.py
