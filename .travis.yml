@@ -2,9 +2,9 @@ language: python
 python:
   - "3.4"
   - "3.5"
-jobs:
-  include:
-    before_install: cd "step2- test files"
+# jobs:
+#  include:
+#    before_install: cd "step2- test files"
 # command to run tests
 script:
   - python TestModule1.py
