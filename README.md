@@ -4,6 +4,9 @@ Group member :
 - Yiwei Gan : gavinyw@outlook.com 
 - Viji Rajagopalan : vijayalakshmi_r.here@yahoo.com
 
+## Pcakage link:
+https://pypi.org/project/DobbyStocksim/
+
 
 ## Directory layout:
 | Section | Details|
