@@ -2,7 +2,7 @@
 # from User import *
 
 from main_package.Stock_main import *
-from main_package.Buy import *
+from main_package.Buy_old import *
 from sub_package.User import *
 from sub_package.bot import *
 from sub_package.endgame import *
