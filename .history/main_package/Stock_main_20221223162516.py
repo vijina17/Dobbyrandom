@@ -1,7 +1,7 @@
 # stock main
 # class for Stock
 # contain the input for number of rounds to paly with
-# import numpy as np
+import numpy as np
 import random
 class SizeError(Exception):
       def __init__(self):

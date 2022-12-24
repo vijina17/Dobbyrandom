@@ -58,6 +58,9 @@ class TestStock(unittest.TestCase): # test class
             size = stock.get_size()
             self.assertIsInstance(size, int)
             self.assertGreaterEqual(size, 0)
+      
+            
+            
             
       def tearDown(self):
             print('Tear Down')

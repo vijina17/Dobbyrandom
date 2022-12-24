@@ -58,6 +58,16 @@ class TestStock(unittest.TestCase): # test class
             size = stock.get_size()
             self.assertIsInstance(size, int)
             self.assertGreaterEqual(size, 0)
+      
+      def test_str(self):
+            stock = Stock()
+            stock_str = str(stock)
+            self.assertIsInstance(stock_str, str)
+            self.assertIn("high price list:", stock_str)
+            self.assertIn("low price list:", stock_str)
+            self.assertIn("volume list:", stock_str)
+            
+            
             
       def tearDown(self):
             print('Tear Down')

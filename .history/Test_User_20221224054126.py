@@ -44,6 +44,7 @@ class TestUser(unittest.TestCase): # test class
             self.assertIsInstance(Stock1, Stock, message)
             self.assertIsInstance(U1, User, message)
 
+
       @classmethod
       def tearDownClass(cls):
             print('teardownClass')
