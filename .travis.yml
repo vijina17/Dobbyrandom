@@ -11,5 +11,5 @@ script:
   - python TestModule1.py
   - python Test_bot.py < testing.txt
   - python Test_endgame.py
+  - python Test_User.py < testing_user.txt
   - python Test_Stock_Main.py
-  - python Test_User.py
