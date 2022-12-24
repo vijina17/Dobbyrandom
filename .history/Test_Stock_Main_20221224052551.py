@@ -28,7 +28,9 @@ class TestStock(unittest.TestCase): # test class
             self.high_price_list = [random.randint(201, 500) for i in range(int(self.n))]
             self.low_price_list = [random.randint(50, 200) for i in range(int(self.n))]
             self.volume_list = [random.randint(1, 200) for i in range(int(self.n))]
-            self.assertEqual(self.n , 5) # it will has error
+            self.assertEqual(self.n , len(self.high_price_list()))
+            self.assertEqual(self.n , len(self.low_price_list()))
+            self.assertEqual(self.n , 4) # it will has error
       
       def test_get_high_price(self):
             stock = Stock()
@@ -56,6 +58,16 @@ class TestStock(unittest.TestCase): # test class
             size = stock.get_size()
             self.assertIsInstance(size, int)
             self.assertGreaterEqual(size, 0)
+      
+      def test_str(self):
+            stock = Stock()
+            stock_str = stock.__str__
+            self.assertIsInstance(stock_str, str)
+            self.assertIn("high price list:", stock_str)
+            self.assertIn("low price list:", stock_str)
+            self.assertIn("volume list:", stock_str)
+            
+            
             
       def tearDown(self):
             print('Tear Down')

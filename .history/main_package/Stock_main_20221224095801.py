@@ -5,8 +5,6 @@ import random
 class SizeError(Exception):
       def __init__(self):
             self.message = "Error: size must be a positive integer"
-      def __str__(self): # __str__ to print() the value
-            return(repr(self.message))
 
 class Stock(object):
       def __init__(self):
@@ -20,8 +18,6 @@ class Stock(object):
                   self.high_price_list = [random.randint(201, 500) for i in range(int(self.n))]
                   self.low_price_list = [random.randint(50, 200) for i in range(int(self.n))]
                   self.volume_list = [random.randint(1, 200) for i in range(int(self.n))]
-            except SizeError as ex:
-                  print("Exception raised:", ex.message)
             except TypeError:
                   print("Error: size must be a numeric value")
             except ValueError:

@@ -1,5 +1,6 @@
 
 from main_package.Stock_main import *
+import numpy as np
 
 
 class bot(Stock):
