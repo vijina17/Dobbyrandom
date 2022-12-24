@@ -16,7 +16,7 @@ Group member :
 
 
 ### Report Coverage
-![IMAGE_DESCRIPTION](https://github.com/vijina17/InClassCI2022N/blob/main/coverage_rate.png)
+![IMAGE_DESCRIPTION](https://github.com/vijina17/InClassCI2022N/blob/main/coverage_rate_pass.png)
 
 
 ### TRAVIS CI
