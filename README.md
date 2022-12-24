@@ -18,6 +18,9 @@ Group member :
 ### Report Coverage
 ![IMAGE_DESCRIPTION](https://github.com/vijina17/InClassCI2022N/blob/main/coverage_rate_pass.png)
 
+### User defined exception
+![IMAGE_DESCRIPTION](https://github.com/vijina17/InClassCI2022N/blob/main/user_defined_exception.png)
+
 
 ### TRAVIS CI
 [![Build Status](https://app.travis-ci.com/vijina17/InClassCI2022N.svg?branch=main)](https://app.travis-ci.com/vijina17/InClassCI2022N)
