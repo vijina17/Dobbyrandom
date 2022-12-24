@@ -2,7 +2,7 @@ import unittest
 
 from main_package.Stock_main import *
 from sub_package.User import *
-from main_package.Buy_old import *
+from main_package.Buy import *
 
 class TestUser(unittest.TestCase): # test class
       
