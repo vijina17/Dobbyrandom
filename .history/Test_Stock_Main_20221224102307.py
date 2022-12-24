@@ -28,7 +28,7 @@ class TestStock(unittest.TestCase): # test class
             self.high_price_list = [random.randint(201, 500) for i in range(int(self.n))]
             self.low_price_list = [random.randint(50, 200) for i in range(int(self.n))]
             self.volume_list = [random.randint(1, 200) for i in range(int(self.n))]
-            # self.assertNotEqual(self.n , 4) # it will has error
+            self.assertNotEqual(self.n , 4) # it will has error
       
       def test_get_high_price(self):
             stock = Stock()
