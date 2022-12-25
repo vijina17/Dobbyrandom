@@ -4,9 +4,6 @@ Group member :
 - Yiwei Gan : gavinyw@outlook.com 
 - Viji Rajagopalan : vijayalakshmi_r.here@yahoo.com
 
-## Pcakage link:
-https://pypi.org/project/DobbyStocksim/
-
 
 ## Directory layout:
 | Section | Details|
@@ -128,3 +125,10 @@ c) endgame - Endgame is a .py file contains several functions that combine the o
    ii. buy_stock_rp(high_price, low_price, vol=0) - Method to calculate current price for each stock and return an arrary with three array-like parameters: total_price, buy_price, buy_volume.
    iii. final_price(status, stock_list) - Method to calculate the final profit from the buy and sell by both user and bot.
 ```
+
+
+## Pcakage link:
+https://pypi.org/project/DobbyStocksim/
+
+## Video link:
+https://youtu.be/h3nBqdgjco0
