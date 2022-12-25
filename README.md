@@ -5,7 +5,7 @@ Group member :
 - Viji Rajagopalan : vijayalakshmi_r.here@yahoo.com
 
 
-## Directory layout:
+## Directory Layout:
 | Section | Details|
 | -----------| -----------|
 |Project repository:| https://github.com/vijina17/InClassCI2022N |
@@ -18,19 +18,25 @@ Group member :
 ### Report Coverage
 ![IMAGE_DESCRIPTION](https://github.com/vijina17/InClassCI2022N/blob/main/coverage_rate_pass.png)
 
-### User defined exception
+
+### User Defined Exception
 ![IMAGE_DESCRIPTION](https://github.com/vijina17/InClassCI2022N/blob/main/user_defined_exception.png)
+
 
 
 ### TRAVIS CI
 [![Build Status](https://app.travis-ci.com/vijina17/InClassCI2022N.svg?branch=main)](https://app.travis-ci.com/vijina17/InClassCI2022N)
 
+
+### Training Video Link
+https://youtu.be/h3nBqdgjco0
+
+
+## Package Link:
+https://pypi.org/project/DobbyStocksim/
+
               
 ## Documentation:
-
-<<<<<<< HEAD
-
-Write a .md file explaining the function details and how they work [1 mark].
 
 =======
 1. preview_of_program(only_User).png - Snapshot of game for user
@@ -125,10 +131,3 @@ c) endgame - Endgame is a .py file contains several functions that combine the o
    ii. buy_stock_rp(high_price, low_price, vol=0) - Method to calculate current price for each stock and return an arrary with three array-like parameters: total_price, buy_price, buy_volume.
    iii. final_price(status, stock_list) - Method to calculate the final profit from the buy and sell by both user and bot.
 ```
-
-
-## Pcakage link:
-https://pypi.org/project/DobbyStocksim/
-
-## Video link:
-https://youtu.be/h3nBqdgjco0
